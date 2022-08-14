@@ -1,0 +1,20 @@
+<odoo>
+
+    <!-- Location Form View -->
+    <record id="fsm_location_form_view_button_location_builder" model="ir.ui.view">
+        <field name="name">fsm.location.level.form.location_builder</field>
+        <field name="model">fsm.location</field>
+        <field name="inherit_id" ref="fieldservice.fsm_location_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='next_stage']" position="after">
+                <button name="%(fsm_location_hierarchy_wizard_action)d"
+                        string="Create sub-location"
+                        class="oe_highlight"
+                        type="action"
+                        groups="fieldservice.group_fsm_dispatcher"
+                    />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

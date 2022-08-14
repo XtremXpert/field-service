@@ -12,8 +12,10 @@
         'fieldservice_account_analytic'
     ],
     'data': [
+        "security/ir.model.access.csv",
         'wizard/fsm_location_builder_wizard.xml',
-        'views/fsm_location_level.xml'
+        'wizard/fsm_location_level.xml',
+        'views/fsm_location.xml'
     ],
     'license': 'AGPL-3',
     'development_status': 'Beta',

@@ -32,4 +32,6 @@
         <field name="context">{'default_primary_location_id': active_id, 'default_owner_id': context.get('owner_id.id',False)}</field>
     </record>
 
+
+
 </odoo>
