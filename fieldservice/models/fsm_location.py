@@ -12,13 +12,16 @@ class FSMLocation(models.Model):
     _description = "Field Service Location"
 
     direction = fields.Char(string="Directions")
+
     partner_id = fields.Many2one(
         "res.partner",
         string="Related Partner",
         required=True,
+        ondelete="restrict",
         delegate=True,
         auto_join=True,
     )
+
     owner_id = fields.Many2one(
         "res.partner",
         string="Related Owner",
